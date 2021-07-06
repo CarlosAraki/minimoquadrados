@@ -3,7 +3,8 @@ services:
   datascience-notebook:
       image: jupyter/datascience-notebook
       volumes:
-        - .trabquad.ipynb:/work/trabquad.ipynb
+        - /workspace/minimoquadrados/data/:/work/
       ports:
         - 8888:8888
       container_name:   datascience-notebook-container
+
